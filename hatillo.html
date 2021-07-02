@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Asentamientos informales y áreas públicas en los distritos: Hatillo, Pavas y Uruca, cantón de San José, Costa Rica</title>     
+    <title>Terrenos del Estado y Municipales en los distritos Hatillos, Pavas y Uruca del cantón de San José, Costa Rica</title>     
 
     <!-- Enlace a biblioteca JQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
@@ -21,6 +21,9 @@
     <!-- Complemento Leaflet.heat -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.heat/0.2.0/leaflet-heat.js"></script>
 
+    <!-- Enlace a complemento Leaflet-choropleth -->
+    <script src="js/choropleth.js"></script> 
+   
     <!-- Enlace a kit de Font Awesome -->
     <script src="https://kit.fontawesome.com/8fee869927.js" crossorigin="anonymous"></script>
     
@@ -28,15 +31,26 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <h1>Asentamientos informales y áreas públicas en los distritos: Hatillo, Pavas y Uruca, cantón de San José, Costa Rica</h1>     
+    <h1>Terrenos del Estado y Municipales en los distritos Hatillos, Pavas y Uruca del cantón de San José</h1>     
     
-    <a href="https://github.com/dvictoria2020/tarea-4">Código fuente</a>
+    <a href="https://github.com/dvictoria2020/proyecto">Código fuente</a>
     <p>
 
     <!-- Elemento div para contener el mapa Leaflet -->
     <div id="mapid"></div>
 
     <!-- Código JavaScript para generar y manejar el mapa Leaflet -->
-    <script src="js/scripts.js"></script>					
+    <script src="js/scripts.js"></script>
+    
+    <!-- Controles para la opacidad de la deficit habitacional -->
+    <h5>Opacidad de la capa de Deficit Habitacional: <span id="span-opacity-Def">0.5</span></h5>
+    <input type='range' id='sld-opacity-Def' min='0' max='1' step='0.1' value='0.5' onchange='updateOpacityDef();'>
+    
+    <nav class="menu">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+        </ul>
+      </nav>
+      
 </body>
 </html>	
