@@ -1,0 +1,26 @@
+/*titulo terreno*/
+h1{
+	padding: 20px;
+	text-align: center;
+	background: rgb(156, 155, 155);
+	color: white;
+	font-size: 30px;
+}
+
+html, body, #mapid { 
+  height: 850px;
+  width: auto;
+}
+
+.estiloIconos {
+  color: rgb(13, 13, 14);
+}
+
+.leaflet-verticalcenter {
+  position: absolute;
+  z-index: 1000;
+  pointer-events: none;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-top: 10px;
+}
