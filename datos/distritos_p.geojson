@@ -1,0 +1,10 @@
+{
+"type": "FeatureCollection",
+"name": "distritos_p",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "cod_catalo": "160105", "codigo_dta": 10110, "provincia": "San José", "canton": "San José", "distrito": "Hatillo", "cod_provin": 1, "cod_canton": 101, "area": 4.37, "region": "Central", "version": "20201222" }, "geometry": { "type": "Point", "coordinates": [ -84.100276728260866, 9.918757 ] } },
+{ "type": "Feature", "properties": { "cod_catalo": "160105", "codigo_dta": 10109, "provincia": "San José", "canton": "San José", "distrito": "Pavas", "cod_provin": 1, "cod_canton": 101, "area": 9.35, "region": "Central", "version": "20201222" }, "geometry": { "type": "Point", "coordinates": [ -84.136219303571437, 9.9495695 ] } },
+{ "type": "Feature", "properties": { "cod_catalo": "160105", "codigo_dta": 10107, "provincia": "San José", "canton": "San José", "distrito": "Uruca", "cod_provin": 1, "cod_canton": 101, "area": 8.39, "region": "Central", "version": "20201222" }, "geometry": { "type": "Point", "coordinates": [ -84.119084115726409, 9.957774383076622 ] } }
+]
+}
