@@ -52,7 +52,9 @@ $.getJSON('https://dvictoria2020.github.io/tarea-3/datos/terrenos/terrenos_estad
 	      fillOpacity: 0.5
 	    }, 
       onEachFeature: function(feature, layer) {
-        var popupText = "<strong>Propietario</strong>: " + feature.properties.nom_juridi + "<br>" + "<strong>Tipo de Inmueble</strong>: " + feature.properties.t_inmueb +  "<br>" + "<strong>Amenazas</strong>: " + feature.properties.r_fisica + "<br>" + "<strong>Número de finca</strong>: " + feature.properties.finca;
+        var popupText = "<strong>Propietario</strong>: " + feature.properties.nom_juridi + "<br>" + "<strong>Tipo de Inmueble</strong>: " 
+        + feature.properties.t_inmueb +  "<br>" + "<strong>Amenazas</strong>: " + feature.properties.r_fisica + "<br>" + "<strong>Número de finca</strong>: " 
+        + feature.properties.finca + "<br>"+ "<strong>Naturaleza</strong>: " + feature.properties.naturaleza;
         layer.bindPopup(popupText);
       }
   }).addTo(mapa);
@@ -92,3 +94,14 @@ function updateOpacityDef() {
   document.getElementById("span-opacity-Def").innerHTML = document.getElementById("sld-opacity-Def").value;
   capa_deficit_habitacional.setOpacity(document.getElementById("sld-opacity-Def").value);
 }
+
+// Agregar capa WMS Asentamientos Informales MIVAH
+var capa_asentamientos_informales = L.tileLayer.wms('https://sig.mivah.go.cr/server/services/cit/AsentamientosInformales/MapServer/WmsServer?', {
+  layers: 'AsentamientosInformales',
+  format: 'image/png',
+  transparent: true,
+  opacity: 0.4
+}).addTo(mapa);
+
+// Se agrega al control de capas como de tipo "overlay"
+control_capas.addOverlay(capa_asentamientos_informales, 'Asentamientos Informales de Costa Rica WMS');

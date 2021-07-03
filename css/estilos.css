@@ -2,13 +2,13 @@
 h1{
 	padding: 20px;
 	text-align: center;
-	background: rgb(156, 155, 155);
+	background: rgb(110, 180, 171);
 	color: white;
 	font-size: 30px;
 }
 
 html, body, #mapid { 
-  height: 850px;
+  height: 700px;
   width: auto;
 }
 
@@ -26,12 +26,12 @@ html, body, #mapid {
 }
 
 p {
-  font-family: Arial;
+  font-family: 'Times New Roman';
 }
 
 h1,h2 {
   color:white;
-  background-color:grey;
+  background-color:rgb(17, 157, 182);
 }
 /* Selectores para la leyenda de leaflet-choropleth */
 .legend {
