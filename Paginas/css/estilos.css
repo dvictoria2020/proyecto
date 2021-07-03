@@ -1,0 +1,16 @@
+p {
+    font-family: Arial;
+}
+
+body {
+    background-color:white
+    color: black;
+    font-family:Arial;
+    margin:0 2px 0 0;
+    border:10px solid;
+}
+
+h1,h2 {
+    color:blue;
+    background-color:white;
+}

@@ -33,14 +33,6 @@ h1,h2 {
   color:white;
   background-color:grey;
 }
-<nav class="menu">
-<ul>
-  <li><a href="#">Inicio</a></li>
-  <li><a href="#">Sobre nosotros</a></li>
-  <li><a href="#">Contacto</a></li>
-</ul>
-</nav>
-
 /* Selectores para la leyenda de leaflet-choropleth */
 .legend {
 	color: #555;
